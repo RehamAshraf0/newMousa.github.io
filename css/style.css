@@ -1151,12 +1151,33 @@ body {
   transform: scale(1.1);
 }
 
+.preloader__background {
+  background-color: var(--background-light);
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  z-index: 10;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 .container {
   display: grid;
   grid-template-columns: 30rem 1fr;
 }
 
 .sidebar {
+  height: 100vh;
   grid-column: 1/2;
   grid-row: 1/2;
   display: -webkit-box;
