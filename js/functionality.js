@@ -28,14 +28,14 @@ for (let i = 0; i < 5; i++) {
 //get the darkmode previous settings if exists
 let darkMode = localStorage.getItem('darkMode');
 
-//define the toggle button
+//define the toggle button 
 const darkModeButton = document.querySelector("#darkmodeToggle");
 
 // Functions 
 
 const enableDarkMode = () => {
 
-    //enable dark mode
+    //enable dark mode   
     document.body.classList.add('darkmode');
 
     //set settings of darkmode to enabled
@@ -215,7 +215,7 @@ Typing.prototype.type = function () {
 
     this.textElement.textContent = this.text;
 
-    let typeSpeed = 300;
+    let typeSpeed = 110;
 
     if (this.isDeleting) {
         typeSpeed /= 2;
